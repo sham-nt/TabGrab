@@ -1,0 +1,19 @@
+{
+    "name": "SendWebData",
+    "description": "Send the current URL or selected text from the webpage",
+    "version": "1.0",
+    "author": "Shamanth Kashyap",
+    "manifest_version": 3,
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "contextMenus"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
