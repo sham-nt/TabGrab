@@ -12,9 +12,6 @@ app.use((req, res, next) => {
   
 app.use(bodyParser.json());
 
-app.listen(port,() => {
-    console.log(`Listening on port ${port}`);
-  });
 
 app.post('/text',(req,res) =>{
    console.log(req.body);
@@ -25,3 +22,7 @@ app.post('/url',(req,res) =>{
     console.log(req.body);
     res.sendStatus(200);
 })
+
+app.listen(port,() => {
+  console.log(`Listening on port ${port}`);
+});

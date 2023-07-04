@@ -4,7 +4,8 @@
   "description": "Sample Backend to fetch data",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
   },
   "author": "Shamanth Kashyap",
   "license": "ISC",
