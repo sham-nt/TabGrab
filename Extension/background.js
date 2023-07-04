@@ -49,7 +49,7 @@ function copyToClipboard(text) {
 }
 
 function sendDataToServer(data) {
-  const endpointURL = 'http://localhost:3000/text';
+  const endpointURL = 'http://localhost:3000/data';
 
   fetch(endpointURL, {
     method: 'POST',

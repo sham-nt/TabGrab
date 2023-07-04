@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 
-app.post('/text',(req,res) =>{
+app.post('/data',(req,res) =>{
    console.log(req.body);
     res.sendStatus(200);
 })
