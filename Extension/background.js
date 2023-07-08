@@ -23,14 +23,14 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       const url = tab.url;
       const data = { "url": url, "text": selectedText };
       console.log(data);
-      sendDataToServer(data);
+      sendDataToServer(data, "text");
     });
   } else if (info.menuItemId === "copyImageUrl") {
     const imageUrl = info.srcUrl;
     const url = tab.url;
     const data = { "url": url, "imageUrl": imageUrl };
     console.log(data);
-    sendDataToServer(data);
+    sendDataToServer(data, "image");
   }
 });
 
@@ -48,8 +48,8 @@ function copyToClipboard(text) {
     });
 }
 
-function sendDataToServer(data) {
-  const endpointURL = 'http://localhost:3000/data';
+function sendDataToServer(data, endpoint) {
+  const endpointURL = `http://localhost:3000/${endpoint}`;
 
   fetch(endpointURL, {
     method: 'POST',

@@ -67,6 +67,8 @@ Chrome extension which can extract the URL, selected Text and, Selected image UR
 ## TODO
 
 * Style the popup
+* Db Conections
+* Make func async
 
 ---
 
